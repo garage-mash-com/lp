@@ -62,7 +62,7 @@ function App() {
       {/* Flow Section */}
       <section id="flow" className="flow">
         <div className="container">
-          <h2>カンタン4ステップ！愛車の買取の流れ📋</h2>
+          <h2>愛車の買取の流れ📋</h2>
           <div className="flow-steps">
             <div className="flow-step">
               <div className="step-number">1</div>
