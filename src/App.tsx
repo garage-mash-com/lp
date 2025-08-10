@@ -1,5 +1,6 @@
 import './App.css'
 import { DialogueIcon, PriceIcon, SpeedIcon } from './components/icons'
+import meIcon from './assets/me.jpg'
 
 function App() {
   return (
@@ -147,7 +148,9 @@ function App() {
       <footer className="footer">
         <div className="container footer-content">
           <div className="representative-info">
-            <div className="representative-photo"></div>
+            <div className="representative-photo">
+              <img src={meIcon} />
+            </div>
             <div className="representative-details">
               <h3>株式会社 D-MASH LINE (Garage MASH)</h3>
               <p>代表者: 佐藤 拓哉</p>
