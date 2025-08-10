@@ -158,7 +158,7 @@ function App() {
         <div className="container footer-content">
           <div className="representative-info">
             <div className="representative-photo">
-              <img src={meIcon} />
+              <img src={meIcon} alt="会社アイコン" />
             </div>
             <div className="representative-details">
               <h3>株式会社 D-MASH LINE (Garage MASH)</h3>
