@@ -1,6 +1,9 @@
 import './App.css'
 import { DialogueIcon, PriceIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
+import priusImage from './assets/prius.jpg'
+import harrierImage from './assets/harrier.jpg'
+import alphardImage from './assets/alphard.jpg'
 
 function App() {
   return (
@@ -29,7 +32,7 @@ function App() {
       {/* Features Section */}
       <section id="features" className="features">
         <div className="container">
-          <h2>ガレージ・マッシュが選ばれる<br />3つの安心</h2>
+          <h2>ガレージ・マッシュが選ばれる<br />3つの安心🛡️</h2>
           <div className="features-grid">
             <div className="feature-item">
               <div className="feature-icon">
@@ -59,7 +62,7 @@ function App() {
       {/* Flow Section */}
       <section id="flow" className="flow">
         <div className="container">
-          <h2>カンタン4ステップ！愛車の買取の流れ</h2>
+          <h2>カンタン4ステップ！愛車の買取の流れ📋</h2>
           <div className="flow-steps">
             <div className="flow-step">
               <div className="step-number">1</div>
@@ -88,7 +91,7 @@ function App() {
       {/* Testimonials Section */}
       <section id="testimonials" className="testimonials">
         <div className="container">
-          <h2>お客様からの声</h2>
+          <h2>お客様からの声💬</h2>
           <div className="testimonial-grid">
             <div className="testimonial-item">
               <p className="testimonial-text">"初めての車売却で不安でしたが、とても親切に対応していただき安心しました。査定額も満足です！"</p>
@@ -109,22 +112,28 @@ function App() {
       {/* Portfolio Section */}
       <section id="portfolio" className="portfolio">
         <div className="container">
-          <h2>最近の買取実績</h2>
+          <h2>最近の買取実績🚗</h2>
           <div className="portfolio-grid">
             <div className="portfolio-item">
-              <div className="portfolio-image"></div>
+              <div className="portfolio-image">
+                <img src={priusImage} alt="トヨタ・プリウス" />
+              </div>
               <h3>トヨタ・プリウス</h3>
               <p>2019年式 / 35,000km</p>
               <p className="price">買取価格: 220万円</p>
             </div>
             <div className="portfolio-item">
-              <div className="portfolio-image"></div>
+              <div className="portfolio-image">
+                <img src={harrierImage} alt="トヨタ・ハリアー" />
+              </div>
               <h3>トヨタ・ハリアー</h3>
               <p>2020年式 / 30,000km</p>
               <p className="price">買取価格: 280万円</p>
             </div>
             <div className="portfolio-item">
-              <div className="portfolio-image"></div>
+              <div className="portfolio-image">
+                <img src={alphardImage} alt="トヨタ・アルファード" />
+              </div>
               <h3>トヨタ・アルファード</h3>
               <p>2021年式 / 25,000km</p>
               <p className="price">買取価格: 450万円</p>
@@ -136,7 +145,7 @@ function App() {
       {/* CTA Section */}
       <section id="cta" className="cta-section">
         <div className="container">
-          <h2>さっそく愛車の価値をチェック</h2>
+          <h2>さっそく愛車の価値をチェック👍</h2>
           <p>無理な営業は一切いたしません。まずはお気軽にご相談ください。</p>
           <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
             <span>公式LINEから無料査定</span>
