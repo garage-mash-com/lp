@@ -299,6 +299,7 @@ p {
   border-radius: 50%;
   background-color: #ccc;
   overflow: hidden;
+  flex-shrink: 0;
   /* Placeholder for photo */
 }
 
@@ -307,6 +308,7 @@ p {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  display: block;
 }
 
 .representative-details h3,
@@ -356,6 +358,17 @@ p {
   .flow-steps {
     flex-direction: column;
     gap: 20px;
+  }
+
+  .representative-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .representative-photo {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
   }
 
   section {
