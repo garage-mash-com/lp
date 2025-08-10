@@ -11,7 +11,7 @@ function App() {
       {/* Header */}
       <header className="header">
         <div className="container">
-          <a href="/" className="logo">Garage MASH</a>
+          <a href="/" className="logo">D-MASH</a>
           <a href="https://lin.ee/dHbAsr2" className="cta-button" target="_blank" rel="noopener noreferrer">
             <span>公式LINEから無料査定</span>
           </a>
@@ -32,7 +32,7 @@ function App() {
       {/* Features Section */}
       <section id="features" className="features">
         <div className="container">
-          <h2>ガレージ・マッシュが選ばれる<br />3つの安心🛡️</h2>
+          <h2>ディーマッシュが選ばれる<br />3つの安心🛡️</h2>
           <div className="features-grid">
             <div className="feature-item">
               <div className="feature-icon">
