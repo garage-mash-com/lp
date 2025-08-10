@@ -251,7 +251,16 @@ p {
   width: 100%;
   height: 200px;
   background-color: #ccc;
-  /* Placeholder for car image */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .portfolio-item h3 {
@@ -300,7 +309,6 @@ p {
   background-color: #ccc;
   overflow: hidden;
   flex-shrink: 0;
-  /* Placeholder for photo */
 }
 
 .representative-photo img {
