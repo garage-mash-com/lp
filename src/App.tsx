@@ -92,15 +92,15 @@ function App() {
           <div className="testimonial-grid">
             <div className="testimonial-item">
               <p className="testimonial-text">"初めての車売却で不安でしたが、とても親切に対応していただき安心しました。査定額も満足です！"</p>
-              <p className="testimonial-author">- A様 (プリウス売却)</p>
+              <p className="testimonial-author">- S.S様 (プリウス売却)</p>
             </div>
             <div className="testimonial-item">
               <p className="testimonial-text">"LINEでのやり取りがスムーズで、忙しい合間でも簡単に手続きできました。また利用したいです。"</p>
-              <p className="testimonial-author">- B様 (ハリアー売却)</p>
+              <p className="testimonial-author">- K.T様 (ハリアー売却)</p>
             </div>
             <div className="testimonial-item">
               <p className="testimonial-text">"何社か見積もりを取りましたが、一番高い価格を提示してくれました。説明も丁寧で信頼できるお店です。"</p>
-              <p className="testimonial-author">- C様 (アルファード売却)</p>
+              <p className="testimonial-author">- M.Y様 (アルファード売却)</p>
             </div>
           </div>
         </div>
@@ -113,21 +113,21 @@ function App() {
           <div className="portfolio-grid">
             <div className="portfolio-item">
               <div className="portfolio-image"></div>
+              <h3>トヨタ・プリウス</h3>
+              <p>2019年式 / 35,000km</p>
+              <p className="price">買取価格: 220万円</p>
+            </div>
+            <div className="portfolio-item">
+              <div className="portfolio-image"></div>
               <h3>トヨタ・ハリアー</h3>
               <p>2020年式 / 30,000km</p>
               <p className="price">買取価格: 280万円</p>
             </div>
             <div className="portfolio-item">
               <div className="portfolio-image"></div>
-              <h3>ホンダ・N-BOX</h3>
-              <p>2022年式 / 5,000km</p>
-              <p className="price">買取価格: 150万円</p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image"></div>
-              <h3>スズキ・ジムニー</h3>
-              <p>2019年式 / 45,000km</p>
-              <p className="price">買取価格: 180万円</p>
+              <h3>トヨタ・アルファード</h3>
+              <p>2021年式 / 25,000km</p>
+              <p className="price">買取価格: 450万円</p>
             </div>
           </div>
         </div>
