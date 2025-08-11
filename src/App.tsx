@@ -168,6 +168,7 @@ function App() {
           <div className="company-details">
             <p>〒059-0922 北海道白老郡白老町萩野342-188</p>
             <p>古物商許可番号: 北海道公安委員会 第101230001605号</p>
+            <p><a href="https://dmash-line.com/" target="_blank" rel="noopener noreferrer">会社ホームページ</a></p>
             <p>&copy; 2025 D-MASH LINE Co., Ltd. All Rights Reserved.</p>
           </div>
         </div>
