@@ -171,7 +171,6 @@ function App() {
       <section id="area" className="area">
         <div className="container">
           <h2>対応エリア🗺️</h2>
-          <p>D-MASHは、以下の都県を中心に迅速に対応いたします。</p>
           <div className="area-grid">
             <div className="area-item">東京都</div>
             <div className="area-item">神奈川県</div>
