@@ -160,6 +160,13 @@ p {
 }
 
 /* Flow Section */
+.flow-step-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
 .flow-steps {
   display: flex;
   justify-content: space-between;
@@ -340,6 +347,15 @@ p {
   color: #bdc3c7;
 }
 
+.company-details a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+.company-details a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   h2 {
@@ -421,4 +437,125 @@ p {
   .feature-item h3 {
     font-size: 1.3rem;
   }
+}
+
+/* FAQ Section */
+.faq {
+  background-color: #fff;
+}
+
+.faq-grid {
+  display: grid;
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #f8fafc;
+}
+
+.faq-question:hover {
+  background-color: #f1f5f9;
+}
+
+.faq-icon {
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  background-color: #fff;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding: 0 20px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 200px; /* Set a sufficient height */
+  padding: 20px 20px;
+}
+
+/* Area Section */
+.area {
+  background-color: #f4f7f6;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.area .container {
+  position: relative;
+  z-index: 1;
+}
+
+.area p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.area-map-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.area-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 20px;
+}
+
+.area-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  padding: 25px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #34495e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.area-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #ff9800;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.area-note {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #666;
 }

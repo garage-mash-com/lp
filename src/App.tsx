@@ -1,9 +1,14 @@
+import FaqItem from './components/FaqItem'
 import './App.css'
 import { DialogueIcon, PriceIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
 import priusImage from './assets/prius.jpg'
 import harrierImage from './assets/harrier.jpg'
 import alphardImage from './assets/alphard.jpg'
+import step1Image from './assets/step1.png'
+import step2Image from './assets/step2.png'
+import step3Image from './assets/step3.png'
+import step4Image from './assets/step4.png'
 
 function App() {
   return (
@@ -67,21 +72,25 @@ function App() {
             <div className="flow-step">
               <div className="step-number">1</div>
               <h3>お申し込み</h3>
+              <img src={step1Image} alt="お申し込み" className="flow-step-image" />
               <p>公式LINEから、お気軽にご連絡ください。</p>
             </div>
             <div className="flow-step">
               <div className="step-number">2</div>
               <h3>査定日の調整</h3>
+              <img src={step2Image} alt="査定日の調整" className="flow-step-image" />
               <p>担当者からご連絡し、ご都合の良い査定日時を調整します。</p>
             </div>
             <div className="flow-step">
               <div className="step-number">3</div>
               <h3>実車査定</h3>
+              <img src={step3Image} alt="実車査定" className="flow-step-image" />
               <p>ご自宅などご指定の場所まで伺い、無料で査定いたします。</p>
             </div>
             <div className="flow-step">
               <div className="step-number">4</div>
               <h3>ご契約・お支払い</h3>
+              <img src={step4Image} alt="ご契約・お支払い" className="flow-step-image" />
               <p>査定額にご納得いただけましたらご契約。お支払日をお約束します。</p>
             </div>
           </div>
@@ -142,6 +151,51 @@ function App() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="faq">
+        <div className="container">
+          <h2>よくある質問❓</h2>
+          <div className="faq-grid">
+            <FaqItem
+              question="査定は本当に無料ですか？"
+              answer="はい、完全無料です。出張査定や査定後のキャンセルでも費用は一切かかりません。"
+            />
+            <FaqItem
+              question="どんな車でも買い取ってもらえますか？"
+              answer="国産車、輸入車問わず、幅広い車種の買取が可能です。事故車や不動車でも、まずはお気軽にご相談ください。"
+            />
+            <FaqItem
+              question="査定時間はどれくらいかかりますか？"
+              answer="お車の状態にもよりますが、通常30分〜1時間程度で完了します。お忙しい方でも、ご都合に合わせて柔軟に対応いたします。"
+            />
+            <FaqItem
+              question="売却に必要な書類は何ですか？"
+              answer="自動車検査証（車検証）、自賠責保険証明書、リサイクル券、印鑑登録証明書、実印などが必要です。詳しくは担当者が丁寧にご案内します。"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Area Section */}
+      <section id="area" className="area">
+        <div className="container">
+          <h2>対応エリア🗺️</h2>
+          <div className="area-map-container">
+            <div className="area-list">
+              <div className="area-item area-tokyo">東京都</div>
+              <div className="area-item area-kanagawa">神奈川県</div>
+              <div className="area-item area-saitama">埼玉県</div>
+              <div className="area-item area-chiba">千葉県</div>
+              <div className="area-item area-gunma">群馬県</div>
+              <div className="area-item area-tochigi">栃木県</div>
+              <div className="area-item area-ibaraki">茨城県</div>
+              <div className="area-item area-yamanashi">山梨県</div>
+            </div>
+          </div>
+          <p className="area-note">※上記以外の地域の方も、お気軽にご相談ください。</p>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section id="cta" className="cta-section">
         <div className="container">
@@ -168,6 +222,7 @@ function App() {
           <div className="company-details">
             <p>〒059-0922 北海道白老郡白老町萩野342-188</p>
             <p>古物商許可番号: 北海道公安委員会 第101230001605号</p>
+            <p><a href="https://dmash-line.com/" target="_blank" rel="noopener noreferrer">会社ホームページ</a></p>
             <p>&copy; 2025 D-MASH LINE Co., Ltd. All Rights Reserved.</p>
           </div>
         </div>
