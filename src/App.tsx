@@ -181,7 +181,7 @@ function App() {
             <div className="area-item">茨城県</div>
             <div className="area-item">山梨県</div>
           </div>
-          <p className="area-note">※上記以外の地域の方も、まずはお気軽にご相談ください。</p>
+          <p className="area-note">※上記以外の地域の方も、お気軽にご相談ください。</p>
         </div>
       </section>
 
