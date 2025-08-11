@@ -1,3 +1,4 @@
+import FaqItem from './components/FaqItem'
 import './App.css'
 import { DialogueIcon, PriceIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
@@ -155,22 +156,22 @@ function App() {
         <div className="container">
           <h2>よくある質問❓</h2>
           <div className="faq-grid">
-            <details className="faq-item">
-              <summary>査定は本当に無料ですか？</summary>
-              <p>はい、完全無料です。出張査定や査定後のキャンセルでも費用は一切かかりません。</p>
-            </details>
-            <details className="faq-item">
-              <summary>どんな車でも買い取ってもらえますか？</summary>
-              <p>国産車、輸入車問わず、幅広い車種の買取が可能です。事故車や不動車でも、まずはお気軽にご相談ください。</p>
-            </details>
-            <details className="faq-item">
-              <summary>査定時間はどれくらいかかりますか？</summary>
-              <p>お車の状態にもよりますが、通常30分〜1時間程度で完了します。お忙しい方でも、ご都合に合わせて柔軟に対応いたします。</p>
-            </details>
-            <details className="faq-item">
-              <summary>売却に必要な書類は何ですか？</summary>
-              <p>自動車検査証（車検証）、自賠責保険証明書、リサイクル券、印鑑登録証明書、実印などが必要です。詳しくは担当者が丁寧にご案内します。</p>
-            </details>
+            <FaqItem
+              question="査定は本当に無料ですか？"
+              answer="はい、完全無料です。出張査定や査定後のキャンセルでも費用は一切かかりません。"
+            />
+            <FaqItem
+              question="どんな車でも買い取ってもらえますか？"
+              answer="国産車、輸入車問わず、幅広い車種の買取が可能です。事故車や不動車でも、まずはお気軽にご相談ください。"
+            />
+            <FaqItem
+              question="査定時間はどれくらいかかりますか？"
+              answer="お車の状態にもよりますが、通常30分〜1時間程度で完了します。お忙しい方でも、ご都合に合わせて柔軟に対応いたします。"
+            />
+            <FaqItem
+              question="売却に必要な書類は何ですか？"
+              answer="自動車検査証（車検証）、自賠責保険証明書、リサイクル券、印鑑登録証明書、実印などが必要です。詳しくは担当者が丁寧にご案内します。"
+            />
           </div>
         </div>
       </section>
