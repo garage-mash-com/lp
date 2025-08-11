@@ -62,7 +62,7 @@ function App() {
       {/* Flow Section */}
       <section id="flow" className="flow">
         <div className="container">
-          <h2>カンタン4ステップ！愛車の買取の流れ📋</h2>
+          <h2>愛車の買取の流れ📋</h2>
           <div className="flow-steps">
             <div className="flow-step">
               <div className="step-number">1</div>
@@ -158,7 +158,7 @@ function App() {
         <div className="container footer-content">
           <div className="representative-info">
             <div className="representative-photo">
-              <img src={meIcon} />
+              <img src={meIcon} alt="会社アイコン" />
             </div>
             <div className="representative-details">
               <h3>株式会社 D-MASH LINE (Garage MASH)</h3>
