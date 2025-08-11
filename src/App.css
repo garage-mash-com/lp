@@ -431,3 +431,79 @@ p {
     font-size: 1.3rem;
   }
 }
+
+/* FAQ Section */
+.faq {
+  background-color: #fff;
+}
+
+.faq-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.faq-item summary {
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  padding: 20px 20px;
+  margin: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Area Section */
+.area {
+  background-color: #f4f7f6;
+  text-align: center;
+}
+
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.area-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.area-note {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #666;
+}
