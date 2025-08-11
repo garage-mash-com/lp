@@ -181,12 +181,6 @@ function App() {
           <h2>対応エリア🗺️</h2>
           <p>関東一円、どこでもお伺いします！</p>
           <div className="area-map-container">
-            {/*
-              ここに地図の画像（SVGやPNG）を配置します。
-              例: <img src={kantoMapImage} alt="関東地方の地図" className="area-map-image" />
-              今回はCSSで背景として表現する、もしくはインラインSVGを検討します。
-              ひとまず、エリア名を配置します。
-            */}
             <div className="area-list">
               <div className="area-item area-tokyo">東京都</div>
               <div className="area-item area-kanagawa">神奈川県</div>
