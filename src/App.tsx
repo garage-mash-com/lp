@@ -179,7 +179,6 @@ function App() {
       <section id="area" className="area">
         <div className="container">
           <h2>対応エリア🗺️</h2>
-          <p>関東一円、どこでもお伺いします！</p>
           <div className="area-map-container">
             <div className="area-list">
               <div className="area-item area-tokyo">東京都</div>
