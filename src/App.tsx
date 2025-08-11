@@ -4,6 +4,10 @@ import meIcon from './assets/me.jpg'
 import priusImage from './assets/prius.jpg'
 import harrierImage from './assets/harrier.jpg'
 import alphardImage from './assets/alphard.jpg'
+import step1Image from './assets/step1.png'
+import step2Image from './assets/step2.png'
+import step3Image from './assets/step3.png'
+import step4Image from './assets/step4.png'
 
 function App() {
   return (
@@ -67,21 +71,25 @@ function App() {
             <div className="flow-step">
               <div className="step-number">1</div>
               <h3>お申し込み</h3>
+              <img src={step1Image} alt="お申し込み" className="flow-step-image" />
               <p>公式LINEから、お気軽にご連絡ください。</p>
             </div>
             <div className="flow-step">
               <div className="step-number">2</div>
               <h3>査定日の調整</h3>
+              <img src={step2Image} alt="査定日の調整" className="flow-step-image" />
               <p>担当者からご連絡し、ご都合の良い査定日時を調整します。</p>
             </div>
             <div className="flow-step">
               <div className="step-number">3</div>
               <h3>実車査定</h3>
+              <img src={step3Image} alt="実車査定" className="flow-step-image" />
               <p>ご自宅などご指定の場所まで伺い、無料で査定いたします。</p>
             </div>
             <div className="flow-step">
               <div className="step-number">4</div>
               <h3>ご契約・お支払い</h3>
+              <img src={step4Image} alt="ご契約・お支払い" className="flow-step-image" />
               <p>査定額にご納得いただけましたらご契約。お支払日をお約束します。</p>
             </div>
           </div>
@@ -171,15 +179,24 @@ function App() {
       <section id="area" className="area">
         <div className="container">
           <h2>対応エリア🗺️</h2>
-          <div className="area-grid">
-            <div className="area-item">東京都</div>
-            <div className="area-item">神奈川県</div>
-            <div className="area-item">埼玉県</div>
-            <div className="area-item">千葉県</div>
-            <div className="area-item">群馬県</div>
-            <div className="area-item">栃木県</div>
-            <div className="area-item">茨城県</div>
-            <div className="area-item">山梨県</div>
+          <p>関東一円、どこでもお伺いします！</p>
+          <div className="area-map-container">
+            {/*
+              ここに地図の画像（SVGやPNG）を配置します。
+              例: <img src={kantoMapImage} alt="関東地方の地図" className="area-map-image" />
+              今回はCSSで背景として表現する、もしくはインラインSVGを検討します。
+              ひとまず、エリア名を配置します。
+            */}
+            <div className="area-list">
+              <div className="area-item area-tokyo">東京都</div>
+              <div className="area-item area-kanagawa">神奈川県</div>
+              <div className="area-item area-saitama">埼玉県</div>
+              <div className="area-item area-chiba">千葉県</div>
+              <div className="area-item area-gunma">群馬県</div>
+              <div className="area-item area-tochigi">栃木県</div>
+              <div className="area-item area-ibaraki">茨城県</div>
+              <div className="area-item area-yamanashi">山梨県</div>
+            </div>
           </div>
           <p className="area-note">※上記以外の地域の方も、お気軽にご相談ください。</p>
         </div>

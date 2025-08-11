@@ -160,6 +160,13 @@ p {
 }
 
 /* Flow Section */
+.flow-step-image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
 .flow-steps {
   display: flex;
   justify-content: space-between;
@@ -484,26 +491,57 @@ p {
 .area {
   background-color: #f4f7f6;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.area-grid {
+
+
+.area .container {
+  position: relative;
+  z-index: 1;
+}
+
+.area p {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.area-map-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.area-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 20px;
-  max-width: 800px;
-  margin: 40px auto;
 }
 
 .area-item {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  padding: 25px 20px;
+  border-radius: 12px;
   font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  font-size: 1.1rem;
+  color: #34495e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.area-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #27ae60;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .area-note {
-  margin-top: 30px;
+  margin-top: 40px;
   font-size: 0.9rem;
   color: #666;
 }
