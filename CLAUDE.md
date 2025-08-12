@@ -32,6 +32,7 @@ npm run build && git add -A && git commit -m "build"
 - **シングルページアプリケーション**: すべてのコンテンツは`App.tsx`でセクションとして表示
 - **コンポーネント構成**:
   - `src/components/FaqItem.tsx` - 内部状態を持つ折りたたみ式FAQコンポーネント
+  - `src/components/HeroSlider.tsx` - ヒーローセクション用のスライダーコンポーネント
   - `src/components/icons/` - SVGアイコンコンポーネント（DialogueIcon, PriceIcon, SpeedIcon）
   - アイコンは`src/components/icons/index.ts`からバレルエクスポートされています
 
@@ -55,7 +56,8 @@ npm run build && git add -A && git commit -m "build"
 
 ### 静的アセット
 - 車の画像: `src/assets/`（prius.jpg, harrier.jpg, alphard.jpg）
-- プロセスステップ画像: `src/assets/step1-4.png`
+- 背景画像: `src/assets/`（bg1.jpg, bg2.jpg, bg3.jpg）
+- プロセスステップ画像: `src/assets/`（step1.png, step2.png, step3.png, step4.png）
 - 会社代表者画像: `src/assets/me.jpg`
 
 ### 外部連携
