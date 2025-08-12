@@ -11,13 +11,13 @@ interface SlideData {
 const slides: SlideData[] = [
   {
     id: 1,
-    title: "大切に乗られた愛車だから、\nどこよりも親切に買い取ります。",
+    title: "大切に乗ってこられた愛車だから、\nどこよりも親切に買い取ります。",
     subtitle: "お客様に寄り添う、安心の査定。まずはお気軽にご相談ください。",
     backgroundImage: "url('src/assets/bg1.jpg')"
   },
   {
     id: 2,
-    title: "愛車の価値を\n最大限に評価します。",
+    title: "愛車の価値を\n最大限評価いたします。",
     subtitle: "経験豊富なプロの査定士が、お車の隠れた価値まで見つけ出します。",
     backgroundImage: "url('src/assets/bg2.jpg')"
   },
