@@ -1,85 +1,84 @@
 # CLAUDE.md
 
 必ず日本語で回答してください。
+このファイルは、Claude Code（claude.ai/code）がこのリポジトリで作業する際のガイダンスを提供します。
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## プロジェクト概要
 
-## Project Overview
+これはD-MASH LINE（Garage MASH）のReact + TypeScriptランディングページです。日本を拠点とする車買取サービスのWebサイトで、Viteをビルドツールとして使用し、会社の車買取サービスを紹介するシングルページのランディングサイトとして機能します。
 
-This is a React + TypeScript landing page for D-MASH LINE (Garage MASH), a car buying service based in Japan. The application is built using Vite as the build tool and serves as a single-page landing site showcasing the company's car buying services.
+## 開発コマンド
 
-## Development Commands
+### 基本的な開発ワークフロー
+- `npm run dev` - ホットリロード付きの開発サーバーを開始
+- `npm run build` - 本番用にビルド（`docs/`ディレクトリに出力）
+- `npm run lint` - コード品質チェック用のESLintを実行
+- `npm run preview` - 本番ビルドをローカルでプレビュー
 
-### Primary Development Workflow
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production (outputs to `docs/` directory)
-- `npm run lint` - Run ESLint for code quality checks
-- `npm run preview` - Preview production build locally
-
-### Build and Deploy Process
-According to the README, the standard build and deploy process is:
+### ビルドとデプロイプロセス
+READMEによると、標準的なビルドとデプロイプロセスは以下です：
 ```bash
 npm run build && git add -A && git commit -m "build"
 ```
 
-## Architecture and Structure
+## アーキテクチャと構造
 
-### Build Configuration
-- **Vite**: Modern build tool with React plugin
-- **Output Directory**: `docs/` (configured for GitHub Pages deployment)
-- **TypeScript**: Configured with separate app and node configs
+### ビルド設定
+- **Vite**: Reactプラグイン付きのモダンビルドツール
+- **出力ディレクトリ**: `docs/`（GitHub Pagesデプロイ用に設定）
+- **TypeScript**: アプリとNodeの設定を分離して構成
 
-### Component Structure
-- **Single Page Application**: All content is rendered in `App.tsx` as sections
-- **Component Organization**:
-  - `src/components/FaqItem.tsx` - Collapsible FAQ component with internal state
-  - `src/components/icons/` - SVG icon components (DialogueIcon, PriceIcon, SpeedIcon)
-  - Icons are exported via barrel export from `src/components/icons/index.ts`
+### コンポーネント構造
+- **シングルページアプリケーション**: すべてのコンテンツは`App.tsx`でセクションとして表示
+- **コンポーネント構成**:
+  - `src/components/FaqItem.tsx` - 内部状態を持つ折りたたみ式FAQコンポーネント
+  - `src/components/icons/` - SVGアイコンコンポーネント（DialogueIcon, PriceIcon, SpeedIcon）
+  - アイコンは`src/components/icons/index.ts`からバレルエクスポートされています
 
-### Styling Approach
-- CSS modules/classes with Japanese content
-- Responsive design for landing page sections
-- Static asset management for car images and step illustrations
+### スタイリングアプローチ
+- 日本語コンテンツ用のCSSモジュール/クラス
+- ランディングページセクション用のレスポンシブデザイン
+- 車の画像とステップイラスト用の静的アセット管理
 
-### Key Application Sections
-The landing page consists of these main sections (all in App.tsx):
-1. Header with logo and CTA button
-2. Hero section
-3. Features (3 key benefits with icons)
-4. Process flow (4-step buying process)
-5. Customer testimonials
-6. Portfolio/recent purchases showcase
-7. FAQ section (using FaqItem component)
-8. Service area coverage
-9. Final CTA section
-10. Footer with company information
+### アプリケーションの主要セクション
+ランディングページは以下の主要セクションで構成されています（すべてApp.tsx内）：
+1. ロゴとCTAボタン付きヘッダー
+2. ヒーローセクション
+3. 特徴（アイコン付き3つの主要メリット）
+4. プロセスフロー（4ステップの買取プロセス）
+5. お客様の声
+6. ポートフォリオ/最近の買取実績
+7. FAQセクション（FaqItemコンポーネントを使用）
+8. サービスエリア
+9. 最終CTAセクション
+10. 会社情報付きフッター
 
-### Static Assets
-- Car images: `src/assets/` (prius.jpg, harrier.jpg, alphard.jpg)
-- Process step images: `src/assets/step1-4.png`
-- Company representative image: `src/assets/me.jpg`
+### 静的アセット
+- 車の画像: `src/assets/`（prius.jpg, harrier.jpg, alphard.jpg）
+- プロセスステップ画像: `src/assets/step1-4.png`
+- 会社代表者画像: `src/assets/me.jpg`
 
-### External Integration
-- LINE integration for customer inquiries: `https://lin.ee/dHbAsr2`
-- Company website: `https://dmash-line.com/`
+### 外部連携
+- 顧客問い合わせ用のLINE連携: `https://lin.ee/dHbAsr2`
+- 会社Webサイト: `https://dmash-line.com/`
 
-## Code Quality Standards
+## コード品質基準
 
-### Linting Configuration
-- ESLint with TypeScript support
-- React Hooks and React Refresh plugins
-- Browser globals configured
-- Ignores `dist/` directory
+### Linting設定
+- TypeScriptサポート付きESLint
+- React HooksとReact Refreshプラグイン
+- ブラウザグローバルを設定
+- `dist/`ディレクトリを除外
 
-### TypeScript Setup
-- Strict TypeScript configuration
-- Separate configs for app code and Node.js tooling
-- Interface definitions for component props (e.g., `FaqItemProps`)
+### TypeScript設定
+- 厳密なTypeScript設定
+- アプリコードとNode.jsツールの設定を分離
+- コンポーネントprops用のインターフェース定義（例：`FaqItemProps`）
 
-## Development Notes
+## 開発ノート
 
-- This is a Japanese-language landing page for car buying services
-- The site builds to `docs/` directory (likely for GitHub Pages hosting)
-- No test framework is currently configured
-- No complex state management - uses local component state only
-- All content is static/hardcoded (no CMS or API integration)
+- 車買取サービス用の日本語ランディングページです
+- サイトは`docs/`ディレクトリにビルドされます（GitHub Pagesホスティング用）
+- テストフレームワークは現在設定されていません
+- 複雑な状態管理はなく、ローカルコンポーネント状態のみ使用
+- すべてのコンテンツは静的/ハードコードされています（CMSやAPI連携なし）
