@@ -38,7 +38,7 @@ const HeroSlider: React.FC = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
-    }, 5000) // 5秒間隔でスライド切り替え
+    }, 5000)
 
     return () => clearInterval(interval)
   }, [])
@@ -81,7 +81,6 @@ const HeroSlider: React.FC = () => {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
       <button className="slider-arrow slider-arrow-prev" onClick={prevSlide} aria-label="前のスライド">
         &#8249;
       </button>
@@ -89,7 +88,6 @@ const HeroSlider: React.FC = () => {
         &#8250;
       </button>
 
-      {/* Slide Indicators */}
       <div className="slider-indicators">
         {slides.map((_, index) => (
           <button
