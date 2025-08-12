@@ -1,4 +1,5 @@
 import FaqItem from './components/FaqItem'
+import HeroSlider from './components/HeroSlider'
 import './App.css'
 import { DialogueIcon, PriceIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
@@ -24,15 +25,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero">
-        <div className="container">
-          <h1>大切に乗られた愛車だから、<br />どこよりも親切に買い取ります。</h1>
-          <p>お客様に寄り添う、安心の査定。まずはお気軽にご相談ください。</p>
-          <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
-            <span>公式LINEから無料査定</span>
-          </a>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* Features Section */}
       <section id="features" className="features">
@@ -44,13 +37,13 @@ function App() {
                 <DialogueIcon />
               </div>
               <h3>丁寧な対話と査定</h3>
-              <p>愛車の良いところをしっかり評価。お客様が大切にしてきた想いも査定額に反映できるよう、丁寧にお話をお伺いし、査定内容も分かりやすくご説明します。</p>
+              <p>愛車の良いところをしっかりと評価。お客様が大切にしてきた想いも査定額に反映できるよう、丁寧にお話をお伺いし、査定内容も分かりやすくご説明します。</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
                 <PriceIcon />
               </div>
-              <h3>駆け引きなしの正直価格</h3>
+              <h3>駆け引き一切なしの正直価格</h3>
               <p>最初から正直な買取価格をご提示します。お客様を不安にさせるような駆け引きは一切行いません。安心してお任せください。</p>
             </div>
             <div className="feature-item">
