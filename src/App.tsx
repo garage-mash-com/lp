@@ -1,4 +1,5 @@
 import FaqItem from './components/FaqItem'
+import HeroSlider from './components/HeroSlider'
 import './App.css'
 import { DialogueIcon, PriceIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
@@ -24,15 +25,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="hero">
-        <div className="container">
-          <h1>大切に乗られた愛車だから、<br />どこよりも親切に買い取ります。</h1>
-          <p>お客様に寄り添う、安心の査定。まずはお気軽にご相談ください。</p>
-          <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
-            <span>公式LINEから無料査定</span>
-          </a>
-        </div>
-      </section>
+      <HeroSlider />
 
       {/* Features Section */}
       <section id="features" className="features">
