@@ -14,7 +14,7 @@ interface SlideData {
 const slides: SlideData[] = [
   {
     id: 1,
-    title: "大切に乗ってこられた愛車だから、\nどこよりも親切に買い取ります。",
+    title: "愛車を\n親切に買い取ります。",
     subtitle: "お客様に寄り添う、安心の査定。まずはお気軽にご相談ください。",
     backgroundImage: `url(${bg1})`
   },
