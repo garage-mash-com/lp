@@ -637,6 +637,11 @@ p {
     width: 100%;
   }
 
+  .header .cta-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   .cta-buttons {
     flex-direction: column;
     gap: 15px;
@@ -645,7 +650,9 @@ p {
 
   .cta-button-large {
     width: 100%;
-    max-width: 300px;
+    max-width: 280px;
+    padding: 18px 36px;
+    font-size: 1.2rem;
   }
 
   .hero {
@@ -717,6 +724,12 @@ p {
 
   .feature-item h3 {
     font-size: 1.3rem;
+  }
+
+  .cta-button-large {
+    max-width: 260px;
+    padding: 16px 32px;
+    font-size: 1.1rem;
   }
 }
 

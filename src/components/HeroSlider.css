@@ -169,6 +169,10 @@
   .slider-indicators {
     bottom: 20px;
   }
+
+  .hero-cta-buttons {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -191,12 +195,14 @@
 
   .hero-cta-buttons {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     align-items: center;
   }
 
   .hero-cta-buttons .cta-button-large {
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
+    padding: 16px 32px;
+    font-size: 1.1rem;
   }
 }
