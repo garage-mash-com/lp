@@ -73,9 +73,14 @@ const HeroSlider: React.FC = () => {
                 </React.Fragment>
               ))}</h1>
               <p>{slide.subtitle}</p>
-              <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
-                <span>公式LINEから無料査定</span>
-              </a>
+              <div className="hero-cta-buttons">
+                <a href="tel:03-5650-4803" className="cta-button-large phone-button">
+                  <span>今すぐ電話で相談</span>
+                </a>
+                <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
+                  <span>公式LINEから無料査定</span>
+                </a>
+              </div>
             </div>
           </div>
         ))}
