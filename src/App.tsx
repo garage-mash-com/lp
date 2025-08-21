@@ -18,9 +18,14 @@ function App() {
       <header className="header">
         <div className="container">
           <a href="/" className="logo">D-MASH</a>
-          <a href="https://lin.ee/dHbAsr2" className="cta-button" target="_blank" rel="noopener noreferrer">
-            <span>公式LINEから無料査定</span>
-          </a>
+          <div className="header-buttons">
+            <a href="tel:03-5650-4803" className="cta-button phone-button">
+              <span>今すぐ電話で相談</span>
+            </a>
+            <a href="https://lin.ee/dHbAsr2" className="cta-button" target="_blank" rel="noopener noreferrer">
+              <span>公式LINEから無料査定</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -206,9 +211,14 @@ function App() {
         <div className="container">
           <h2>さっそく愛車の価値をチェック👍</h2>
           <p>無理な営業は一切いたしません。まずはお気軽にご相談ください。</p>
-          <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
-            <span>公式LINEから無料査定</span>
-          </a>
+          <div className="cta-buttons">
+            <a href="tel:03-5650-4803" className="cta-button-large phone-button">
+              <span>今すぐ電話で相談</span>
+            </a>
+            <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
+              <span>公式LINEから無料査定</span>
+            </a>
+          </div>
         </div>
       </section>
 
