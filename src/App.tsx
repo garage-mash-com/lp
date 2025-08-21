@@ -1,7 +1,7 @@
 import FaqItem from './components/FaqItem'
 import HeroSlider from './components/HeroSlider'
 import './App.css'
-import { DialogueIcon, PriceIcon, SpeedIcon } from './components/icons'
+import { DialogueIcon, PriceIcon, ShieldIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
 import priusImage from './assets/prius.jpg'
 import harrierImage from './assets/harrier.jpg'
@@ -30,7 +30,7 @@ function App() {
       {/* Features Section */}
       <section id="features" className="features">
         <div className="container">
-          <h2>ディーマッシュが選ばれる<br />3つの安心🛡️</h2>
+          <h2>ディーマッシュが選ばれる<br />4つの安心🛡️</h2>
           <div className="features-grid">
             <div className="feature-item">
               <div className="feature-icon">
@@ -45,6 +45,13 @@ function App() {
               </div>
               <h3>駆け引き一切なしの正直価格</h3>
               <p>最初から正直な買取価格をご提示します。お客様を不安にさせるような駆け引きは一切行いません。安心してお任せください。</p>
+            </div>
+            <div className="feature-item">
+              <div className="feature-icon">
+                <ShieldIcon />
+              </div>
+              <h3>引き取り後の減額なし</h3>
+              <p>一度査定額が確定したら、引き取り後に「やっぱり〇〇が…」などの減額交渉は一切いたしません。お約束した金額を最後まで守ります。</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
@@ -159,11 +166,15 @@ function App() {
             />
             <FaqItem
               question="査定時間はどれくらいかかりますか？"
-              answer="お車の状態にもよりますが、通常30分〜1時間程度で完了します。お忙しい方でも、ご都合に合わせて柔軟に対応いたします。"
+              answer="お車の状態にもよりますが、通常30分〜1時間程度で完了します。お忙しい方でも、ご都合に合わせて柔軟に対応いたします。夜間の査定対応も可能ですので、お仕事帰りでもご安心ください。"
             />
             <FaqItem
               question="売却に必要な書類は何ですか？"
               answer="自動車検査証（車検証）、自賠責保険証明書、リサイクル券、印鑑登録証明書、実印などが必要です。詳しくは担当者が丁寧にご案内します。"
+            />
+            <FaqItem
+              question="売却に手数料はかかりますか？"
+              answer="いいえ、手数料はかかりません。名義変更にかかる諸費用や車両を引き上げるための陸送費も弊社が負担しますので、お客様の費用負担はございません。"
             />
           </div>
         </div>
@@ -175,6 +186,7 @@ function App() {
           <h2>対応エリア🗺️</h2>
           <div className="area-map-container">
             <div className="area-list">
+              <div className="area-item area-hokkaido">北海道</div>
               <div className="area-item area-tokyo">東京都</div>
               <div className="area-item area-kanagawa">神奈川県</div>
               <div className="area-item area-saitama">埼玉県</div>
