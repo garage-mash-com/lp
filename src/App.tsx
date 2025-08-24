@@ -174,15 +174,15 @@ function App() {
           <div className="testimonial-grid">
             <div className="testimonial-item">
               <p className="testimonial-text">"初めての車売却で不安でしたが、とても親切に対応していただき安心しました。査定額も満足です！"</p>
-              <p className="testimonial-author">- S.S様 (プリウス売却)</p>
+              <p className="testimonial-author"> S.S様 (プリウス売却)</p>
             </div>
             <div className="testimonial-item">
               <p className="testimonial-text">"LINEでのやり取りがスムーズで、忙しい合間でも簡単に手続きできました。また利用したいです。"</p>
-              <p className="testimonial-author">- K.T様 (ハリアー売却)</p>
+              <p className="testimonial-author"> K.T様 (ハリアー売却)</p>
             </div>
             <div className="testimonial-item">
               <p className="testimonial-text">"何社か見積もりを取りましたが、一番高い価格を提示してくれました。説明も丁寧で信頼できるお店です。"</p>
-              <p className="testimonial-author">- M.Y様 (アルファード売却)</p>
+              <p className="testimonial-author"> M.Y様 (アルファード売却)</p>
             </div>
           </div>
         </div>
