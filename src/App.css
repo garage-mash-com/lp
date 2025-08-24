@@ -50,6 +50,12 @@ p {
   align-items: center;
 }
 
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
@@ -92,6 +98,18 @@ p {
 .header .cta-button:hover {
   background-color: #00a300;
   box-shadow: 0 4px 12px rgba(0, 185, 0, 0.4);
+}
+
+.header .phone-button {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.header .phone-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
 }
 
 .cta-button-large {
@@ -375,6 +393,23 @@ p {
   margin-right: auto;
 }
 
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-section .phone-button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+}
+
+.cta-section .phone-button:hover {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.5);
+}
+
 .testimonials {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 60px 0;
@@ -596,6 +631,30 @@ p {
     gap: 15px;
   }
 
+  .header-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .header .cta-button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .cta-button-large {
+    width: 100%;
+    max-width: 280px;
+    padding: 18px 36px;
+    font-size: 1.2rem;
+  }
+
   .hero {
     padding: 80px 0;
   }
@@ -665,6 +724,12 @@ p {
 
   .feature-item h3 {
     font-size: 1.3rem;
+  }
+
+  .cta-button-large {
+    max-width: 260px;
+    padding: 16px 32px;
+    font-size: 1.1rem;
   }
 }
 

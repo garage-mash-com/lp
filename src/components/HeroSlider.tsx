@@ -14,7 +14,7 @@ interface SlideData {
 const slides: SlideData[] = [
   {
     id: 1,
-    title: "大切に乗ってこられた愛車だから、\nどこよりも親切に買い取ります。",
+    title: "愛車を\n親切に買い取ります。",
     subtitle: "お客様に寄り添う、安心の査定。まずはお気軽にご相談ください。",
     backgroundImage: `url(${bg1})`
   },
@@ -73,9 +73,14 @@ const HeroSlider: React.FC = () => {
                 </React.Fragment>
               ))}</h1>
               <p>{slide.subtitle}</p>
-              <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
-                <span>公式LINEから無料査定</span>
-              </a>
+              <div className="hero-cta-buttons">
+                <a href="tel:03-5650-4803" className="cta-button-large phone-button">
+                  <span>今すぐ電話で相談</span>
+                </a>
+                <a href="https://lin.ee/dHbAsr2" className="cta-button-large" target="_blank" rel="noopener noreferrer">
+                  <span>公式LINEから無料査定</span>
+                </a>
+              </div>
             </div>
           </div>
         ))}
