@@ -4,13 +4,17 @@ import PortfolioItem from './components/PortfolioItem'
 import './App.css'
 import { DialogueIcon, PriceIcon, ShieldIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
-import priusImage from './assets/old/prius.jpg'
+// import priusImage from './assets/old/prius.jpg'
 // import harrierImage from './assets/old/harrier.jpg'
 // import alphardImage from './assets/old/alphard.jpg'
+import portfolio1Image from './assets/portfolio1.jpg'
+import portfolio2Image from './assets/portfolio2.jpg'
 import portfolio3Image from './assets/portfolio3.jpg'
 import portfolio4Image from './assets/portfolio4.jpg'
 import portfolio5Image from './assets/portfolio5.jpg'
 import portfolio6Image from './assets/portfolio6.jpg'
+import portfolio7Image from './assets/portfolio7.jpg'
+import portfolio8Image from './assets/portfolio8.jpg'
 import step1Image from './assets/step1.png'
 import step2Image from './assets/step2.png'
 import step3Image from './assets/step3.png'
@@ -40,7 +44,7 @@ function App() {
       price: "25万円"
     },
     {
-      image: priusImage,
+      image: portfolio7Image,
       alt: "トヨタ・アクア",
       title: "トヨタ・アクア",
       specs: "平成24年式 / 90,000km",
@@ -54,21 +58,21 @@ function App() {
       price: "70万円"
     },
     {
-      image: priusImage,
+      image: portfolio8Image,
       alt: "ホンダ・ヴェゼル",
       title: "ホンダ・ヴェゼル",
       specs: "平成27年式 / 85,000km",
       price: "75万円"
     },
     {
-      image: priusImage,
+      image: portfolio1Image,
       alt: "トヨタ・アルファード HV",
       title: "トヨタ・アルファード HV",
       specs: "平成24年式 / 120,000Km",
       price: "128万円"
     },
     {
-      image: priusImage,
+      image: portfolio2Image,
       alt: "トヨタ・ハリアー",
       title: "トヨタ・ハリアー",
       specs: "平成27年式 / 98,000km",
