@@ -16,7 +16,7 @@ import step4Image from './assets/step4.png'
 function App() {
   const portfolioItems = [
     {
-      image: portfolio4Image,
+      image: priusImage,
       alt: "トヨタ・ルミオン",
       title: "トヨタ・ルミオン",
       specs: "平成26年式 / 140,000km",
@@ -44,7 +44,7 @@ function App() {
       price: "60万円"
     },
     {
-      image: priusImage,
+      image: portfolio4Image,
       alt: "ホンダ・NBOXカスタム",
       title: "ホンダ・NBOXカスタム",
       specs: "平成26年式 / 42,000km",
