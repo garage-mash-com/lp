@@ -1,17 +1,82 @@
 import FaqItem from './components/FaqItem'
 import HeroSlider from './components/HeroSlider'
+import PortfolioItem from './components/PortfolioItem'
 import './App.css'
 import { DialogueIcon, PriceIcon, ShieldIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
-import priusImage from './assets/old/prius.jpg'
-import harrierImage from './assets/old/harrier.jpg'
-import alphardImage from './assets/old/alphard.jpg'
+import portfolio1Image from './assets/portfolio1.jpg'
+import portfolio2Image from './assets/portfolio2.jpg'
+import portfolio3Image from './assets/portfolio3.jpg'
+import portfolio4Image from './assets/portfolio4.jpg'
+import portfolio5Image from './assets/portfolio5.jpg'
+import portfolio6Image from './assets/portfolio6.jpg'
+import portfolio7Image from './assets/portfolio7.jpg'
+import portfolio8Image from './assets/portfolio8.jpg'
 import step1Image from './assets/step1.png'
 import step2Image from './assets/step2.png'
 import step3Image from './assets/step3.png'
 import step4Image from './assets/step4.png'
 
 function App() {
+  const portfolioItems = [
+    {
+      image: portfolio1Image,
+      alt: "トヨタ・ルミオン",
+      title: "トヨタ・ルミオン",
+      specs: "平成26年式 / 140,000km",
+      price: "15万円"
+    },
+    {
+      image: portfolio2Image,
+      alt: "トヨタ・ヴィッツ",
+      title: "トヨタ・ヴィッツ",
+      specs: "平成18年式 / 150,000km",
+      price: "20万円"
+    },
+    {
+      image: portfolio3Image,
+      alt: "スズキ・ワゴンR",
+      title: "スズキ・ワゴンR",
+      specs: "平成24年式 / 60,000km",
+      price: "25万円"
+    },
+    {
+      image: portfolio4Image,
+      alt: "トヨタ・アクア",
+      title: "トヨタ・アクア",
+      specs: "平成24年式 / 90,000km",
+      price: "60万円"
+    },
+    {
+      image: portfolio5Image,
+      alt: "ホンダ・NBOXカスタム",
+      title: "ホンダ・NBOXカスタム",
+      specs: "平成26年式 / 42,000km",
+      price: "70万円"
+    },
+    {
+      image: portfolio6Image,
+      alt: "ホンダ・ヴェゼル",
+      title: "ホンダ・ヴェゼル",
+      specs: "平成27年式 / 85,000km",
+      price: "75万円"
+    },
+    {
+      image: portfolio7Image,
+      alt: "トヨタ・アルファード HV",
+      title: "トヨタ・アルファード HV",
+      specs: "平成24年式 / 120,000Km",
+      price: "128万円"
+    },
+    {
+      image: portfolio8Image,
+      alt: "トヨタ・ハリアー",
+      title: "トヨタ・ハリアー",
+      specs: "平成27年式 / 98,000km",
+      price: "150万円"
+    }
+  ];
+
   return (
     <>
       {/* Header */}
@@ -128,30 +193,16 @@ function App() {
         <div className="container">
           <h2>最近の買取実績🚗</h2>
           <div className="portfolio-grid">
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src={priusImage} alt="トヨタ・プリウス" />
-              </div>
-              <h3>トヨタ・プリウス</h3>
-              <p>2019年式 / 35,000km</p>
-              <p className="price">買取価格: 220万円</p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src={harrierImage} alt="トヨタ・ハリアー" />
-              </div>
-              <h3>トヨタ・ハリアー</h3>
-              <p>2020年式 / 30,000km</p>
-              <p className="price">買取価格: 280万円</p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src={alphardImage} alt="トヨタ・アルファード" />
-              </div>
-              <h3>トヨタ・アルファード</h3>
-              <p>2021年式 / 25,000km</p>
-              <p className="price">買取価格: 450万円</p>
-            </div>
+            {portfolioItems.map((item, index) => (
+              <PortfolioItem
+                key={index}
+                image={item.image}
+                alt={item.alt}
+                title={item.title}
+                specs={item.specs}
+                price={item.price}
+              />
+            ))}
           </div>
         </div>
       </section>
