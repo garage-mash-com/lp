@@ -173,16 +173,20 @@ function App() {
           <h2>お客様からの声💬</h2>
           <div className="testimonial-grid">
             <div className="testimonial-item">
-              <p className="testimonial-text">"初めての車売却で不安でしたが、とても親切に対応していただき安心しました。査定額も満足です！"</p>
-              <p className="testimonial-author">- S.S様 (プリウス売却)</p>
+              <p className="testimonial-text">"事故車で他社では断られていましたが、ディーマッシュさんは丁寧に査定してくださり、思っていた以上の高額で買い取っていただけました。本当に感謝しています。"</p>
+              <p className="testimonial-author"> R.O様 (ルミオン売却)</p>
             </div>
             <div className="testimonial-item">
-              <p className="testimonial-text">"LINEでのやり取りがスムーズで、忙しい合間でも簡単に手続きできました。また利用したいです。"</p>
-              <p className="testimonial-author">- K.T様 (ハリアー売却)</p>
+              <p className="testimonial-text">"年式が古く走行距離も多いヴィッツでしたが、手入れの良さをきちんと評価してくださいました。他社よりも明らかに高い査定額で、驚きました。"</p>
+              <p className="testimonial-author"> S.S様 (ヴィッツ売却)</p>
             </div>
             <div className="testimonial-item">
-              <p className="testimonial-text">"何社か見積もりを取りましたが、一番高い価格を提示してくれました。説明も丁寧で信頼できるお店です。"</p>
-              <p className="testimonial-author">- M.Y様 (アルファード売却)</p>
+              <p className="testimonial-text">"高級車なので慎重に業者を選びましたが、ディーマッシュさんは専門知識が豊富で安心してお任せできました。期待を上回る査定額に大満足です。"</p>
+              <p className="testimonial-author"> M.Y様 (アルファード売却)</p>
+            </div>
+            <div className="testimonial-item">
+              <p className="testimonial-text">"忙しくて時間が取れない中、LINEでスムーズにやり取りできて助かりました。査定も素早く、手続きも簡単で本当に楽でした。"</p>
+              <p className="testimonial-author"> K.T様 (ハリアー売却)</p>
             </div>
           </div>
         </div>

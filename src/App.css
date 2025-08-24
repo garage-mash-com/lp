@@ -482,6 +482,12 @@ p {
   gap: 40px;
 }
 
+@media (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .portfolio-item {
   background: #fff;
   border-radius: 20px;
