@@ -184,6 +184,10 @@ function App() {
               <p className="testimonial-text">"LINEでのやり取りがスムーズで、忙しい合間でも簡単に手続きできました。また利用したいです。"</p>
               <p className="testimonial-author"> K.T様 (ハリアー売却)</p>
             </div>
+            <div className="testimonial-item">
+              <p className="testimonial-text">"LINEでのやり取りがスムーズで、忙しい合間でも簡単に手続きできました。また利用したいです。"</p>
+              <p className="testimonial-author"> K.T様 (ハリアー売却)</p>
+            </div>
           </div>
         </div>
       </section>
