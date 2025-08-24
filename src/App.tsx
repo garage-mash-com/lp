@@ -1,17 +1,42 @@
 import FaqItem from './components/FaqItem'
 import HeroSlider from './components/HeroSlider'
+import PortfolioItem from './components/PortfolioItem'
 import './App.css'
 import { DialogueIcon, PriceIcon, ShieldIcon, SpeedIcon } from './components/icons'
 import meIcon from './assets/me.jpg'
 import priusImage from './assets/old/prius.jpg'
-import harrierImage from './assets/old/harrier.jpg'
-import alphardImage from './assets/old/alphard.jpg'
+// import harrierImage from './assets/old/harrier.jpg'
+// import alphardImage from './assets/old/alphard.jpg'
 import step1Image from './assets/step1.png'
 import step2Image from './assets/step2.png'
 import step3Image from './assets/step3.png'
 import step4Image from './assets/step4.png'
 
 function App() {
+  const portfolioItems = [
+    {
+      image: priusImage,
+      alt: "トヨタ・プリウス",
+      title: "トヨタ・プリウス",
+      specs: "2019年式 / 35,000km",
+      price: "220万円"
+    },
+    {
+      image: priusImage,
+      alt: "トヨタ・ハリアー",
+      title: "トヨタ・ハリアー",
+      specs: "2020年式 / 30,000km",
+      price: "280万円"
+    },
+    {
+      image: priusImage,
+      alt: "トヨタ・アルファード",
+      title: "トヨタ・アルファード",
+      specs: "2021年式 / 20,000km",
+      price: "450万円"
+    }
+  ];
+
   return (
     <>
       {/* Header */}
@@ -128,30 +153,16 @@ function App() {
         <div className="container">
           <h2>最近の買取実績🚗</h2>
           <div className="portfolio-grid">
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src={priusImage} alt="トヨタ・プリウス" />
-              </div>
-              <h3>トヨタ・プリウス</h3>
-              <p>2019年式 / 35,000km</p>
-              <p className="price">買取価格: 220万円</p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src={harrierImage} alt="トヨタ・ハリアー" />
-              </div>
-              <h3>トヨタ・ハリアー</h3>
-              <p>2020年式 / 30,000km</p>
-              <p className="price">買取価格: 280万円</p>
-            </div>
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src={alphardImage} alt="トヨタ・アルファード" />
-              </div>
-              <h3>トヨタ・アルファード</h3>
-              <p>2021年式 / 25,000km</p>
-              <p className="price">買取価格: 450万円</p>
-            </div>
+            {portfolioItems.map((item, index) => (
+              <PortfolioItem
+                key={index}
+                image={item.image}
+                alt={item.alt}
+                title={item.title}
+                specs={item.specs}
+                price={item.price}
+              />
+            ))}
           </div>
         </div>
       </section>
