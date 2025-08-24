@@ -7,6 +7,7 @@ import meIcon from './assets/me.jpg'
 import priusImage from './assets/old/prius.jpg'
 // import harrierImage from './assets/old/harrier.jpg'
 // import alphardImage from './assets/old/alphard.jpg'
+import portfolio4Image from './assets/portfolio4.jpg'
 import step1Image from './assets/step1.png'
 import step2Image from './assets/step2.png'
 import step3Image from './assets/step3.png'
@@ -14,6 +15,48 @@ import step4Image from './assets/step4.png'
 
 function App() {
   const portfolioItems = [
+    {
+      image: portfolio4Image,
+      alt: "トヨタ・ルミオン",
+      title: "トヨタ・ルミオン",
+      specs: "平成26年式 / 140,000km",
+      price: "15万円"
+    },
+    {
+      image: priusImage,
+      alt: "トヨタ・ヴィッツ",
+      title: "トヨタ・ヴィッツ",
+      specs: "平成18年式 / 150,000km",
+      price: "20万円"
+    },
+    {
+      image: priusImage,
+      alt: "スズキ・ワゴンR",
+      title: "スズキ・ワゴンR",
+      specs: "平成24年式 / 60,000km",
+      price: "25万円"
+    },
+    {
+      image: priusImage,
+      alt: "トヨタ・アクア",
+      title: "トヨタ・アクア",
+      specs: "平成24年式 / 90,000km",
+      price: "60万円"
+    },
+    {
+      image: priusImage,
+      alt: "ホンダ・NBOXカスタム",
+      title: "ホンダ・NBOXカスタム",
+      specs: "平成26年式 / 42,000km",
+      price: "70万円"
+    },
+    {
+      image: priusImage,
+      alt: "ホンダ・ヴェゼル",
+      title: "ホンダ・ヴェゼル",
+      specs: "平成27年式 / 85,000km",
+      price: "75万円"
+    },
     {
       image: priusImage,
       alt: "トヨタ・アルファード HV",
@@ -27,48 +70,6 @@ function App() {
       title: "トヨタ・ハリアー",
       specs: "平成27年式 / 98,000km",
       price: "150万円"
-    },
-    {
-      image: priusImage,
-      alt: "スズキ・ワゴンR",
-      title: "スズキ・ワゴンR",
-      specs: "平成24年式 / 60,000km",
-      price: "25万円"
-    },
-    {
-      image: priusImage,
-      alt: "ホンダ・NBOXカスタム",
-      title: "ホンダ・NBOXカスタム",
-      specs: "平成26年式 / 42,000km",
-      price: "70万円"
-    },
-    {
-      image: priusImage,
-      alt: "トヨタ・ヴィッツ",
-      title: "トヨタ・ヴィッツ",
-      specs: "平成18年式 / 150,000km",
-      price: "20万円"
-    },
-    {
-      image: priusImage,
-      alt: "トヨタ・ルミオン",
-      title: "トヨタ・ルミオン",
-      specs: "平成26年式 / 140,000km",
-      price: "15万円"
-    },
-    {
-      image: priusImage,
-      alt: "トヨタ・アクア",
-      title: "トヨタ・アクア",
-      specs: "平成24年式 / 90,000km",
-      price: "60万円"
-    },
-    {
-      image: priusImage,
-      alt: "ホンダ・ヴェゼル",
-      title: "ホンダ・ヴェゼル",
-      specs: "平成27年式 / 85,000km",
-      price: "75万円"
     }
   ];
 
