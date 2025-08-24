@@ -20,14 +20,14 @@ import step4Image from './assets/step4.png'
 function App() {
   const portfolioItems = [
     {
-      image: portfolio6Image,
+      image: portfolio1Image,
       alt: "トヨタ・ルミオン",
       title: "トヨタ・ルミオン",
       specs: "平成26年式 / 140,000km",
       price: "15万円"
     },
     {
-      image: portfolio5Image,
+      image: portfolio2Image,
       alt: "トヨタ・ヴィッツ",
       title: "トヨタ・ヴィッツ",
       specs: "平成18年式 / 150,000km",
@@ -41,35 +41,35 @@ function App() {
       price: "25万円"
     },
     {
-      image: portfolio7Image,
+      image: portfolio4Image,
       alt: "トヨタ・アクア",
       title: "トヨタ・アクア",
       specs: "平成24年式 / 90,000km",
       price: "60万円"
     },
     {
-      image: portfolio4Image,
+      image: portfolio5Image,
       alt: "ホンダ・NBOXカスタム",
       title: "ホンダ・NBOXカスタム",
       specs: "平成26年式 / 42,000km",
       price: "70万円"
     },
     {
-      image: portfolio8Image,
+      image: portfolio6Image,
       alt: "ホンダ・ヴェゼル",
       title: "ホンダ・ヴェゼル",
       specs: "平成27年式 / 85,000km",
       price: "75万円"
     },
     {
-      image: portfolio1Image,
+      image: portfolio7Image,
       alt: "トヨタ・アルファード HV",
       title: "トヨタ・アルファード HV",
       specs: "平成24年式 / 120,000Km",
       price: "128万円"
     },
     {
-      image: portfolio2Image,
+      image: portfolio8Image,
       alt: "トヨタ・ハリアー",
       title: "トヨタ・ハリアー",
       specs: "平成27年式 / 98,000km",
