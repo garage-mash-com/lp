@@ -12,6 +12,7 @@ import portfolio5Image from './assets/portfolio5.jpg'
 import portfolio6Image from './assets/portfolio6.jpg'
 import portfolio7Image from './assets/portfolio7.jpg'
 import portfolio8Image from './assets/portfolio8.jpg'
+import portfolio9Image from './assets/portfolio9.jpg'
 import step1Image from './assets/step1.png'
 import step2Image from './assets/step2.png'
 import step3Image from './assets/step3.png'
@@ -46,6 +47,13 @@ function App() {
       title: "トヨタ・アクア",
       specs: "平成24年式 / 90,000km",
       price: "60万円"
+    },
+    {
+      image: portfolio9Image,
+      alt: "トヨタ・タウンエース",
+      title: "トヨタ・タウンエース",
+      specs: "平成3年式 / 87,000km",
+      price: "65万円"
     },
     {
       image: portfolio5Image,
