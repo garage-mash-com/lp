@@ -7,7 +7,10 @@ import meIcon from './assets/me.jpg'
 import priusImage from './assets/old/prius.jpg'
 // import harrierImage from './assets/old/harrier.jpg'
 // import alphardImage from './assets/old/alphard.jpg'
+import portfolio3Image from './assets/portfolio3.jpg'
 import portfolio4Image from './assets/portfolio4.jpg'
+import portfolio5Image from './assets/portfolio5.jpg'
+import portfolio6Image from './assets/portfolio6.jpg'
 import step1Image from './assets/step1.png'
 import step2Image from './assets/step2.png'
 import step3Image from './assets/step3.png'
@@ -16,21 +19,21 @@ import step4Image from './assets/step4.png'
 function App() {
   const portfolioItems = [
     {
-      image: priusImage,
+      image: portfolio6Image,
       alt: "トヨタ・ルミオン",
       title: "トヨタ・ルミオン",
       specs: "平成26年式 / 140,000km",
       price: "15万円"
     },
     {
-      image: priusImage,
+      image: portfolio5Image,
       alt: "トヨタ・ヴィッツ",
       title: "トヨタ・ヴィッツ",
       specs: "平成18年式 / 150,000km",
       price: "20万円"
     },
     {
-      image: priusImage,
+      image: portfolio3Image,
       alt: "スズキ・ワゴンR",
       title: "スズキ・ワゴンR",
       specs: "平成24年式 / 60,000km",
