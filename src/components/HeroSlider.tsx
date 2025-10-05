@@ -14,20 +14,20 @@ interface SlideData {
 const slides: SlideData[] = [
   {
     id: 1,
-    title: "愛車を\n親切に買い取ります。",
-    subtitle: "お客様に寄り添う、安心の査定。まずはお気軽にご相談ください。",
+    title: "愛車を\n親切に買い取ります！",
+    subtitle: "お客様に寄り添う、安心の査定。まずはお気軽にご相談ください 😊",
     backgroundImage: `url(${bg1})`
   },
   {
     id: 2,
-    title: "愛車の価値を\n最大限評価いたします。",
-    subtitle: "経験豊富なプロの査定士が、お車の隠れた価値まで見つけ出します。",
+    title: "愛車の価値を\n最大限評価いたします！",
+    subtitle: "経験豊富なプロの査定士が、お車の隠れた価値まで見つけ出します 😊",
     backgroundImage: `url(${bg2})`
   },
   {
     id: 3,
-    title: "お客様ファーストの\n安心サービス。",
-    subtitle: "駆け引きなしの正直価格で、信頼の車買取をお約束いたします。",
+    title: "お客様ファーストの\n安心サービス！",
+    subtitle: "駆け引きなしの正直価格で、信頼の車買取をお約束いたします 😊",
     backgroundImage: `url(${bg3})`
   }
 ]
