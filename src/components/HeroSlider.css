@@ -2,6 +2,7 @@
   position: relative;
   height: 500px;
   overflow: hidden;
+  padding: 0px;
 }
 
 .slider-container {
